@@ -13,19 +13,21 @@ public class BlueHazardScript : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             Debug.Log("Player hit a hazard!");
-            PlayerRespawn player = other.GetComponent<PlayerRespawn>();
+            PlayerFail player = other.GetComponent<PlayerFail>();
             
-            if (player != null)
-            {
-                //player.Respawn();
-            }
-            
-        }
-        // Allows color kills
-        if (keyPickedUp)
+            // Allows color kills
+            if (keyPickedUp)
             {
                 Destroy(this.gameObject);
                 print("gone");
             }
+
+            else if (player != null)
+            {
+                player.Fail();
+            }
+            
+        }
+        
     }
 }

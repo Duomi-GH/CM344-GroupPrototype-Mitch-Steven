@@ -2096,7 +2096,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 350129016}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2138724398}
+        m_TargetAssemblyTypeName: PlayerFail, Assembly-CSharp
+        m_MethodName: RestartButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &350129016
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7538,7 +7550,7 @@ Transform:
   - {fileID: 1096445883}
   - {fileID: 1241998287}
   m_Father: {fileID: 0}
-  m_RootOrder: 26
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1521775442
 GameObject:
@@ -7654,7 +7666,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 23
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1523449930
 MonoBehaviour:
@@ -7665,10 +7677,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1523449928}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9196c61990da76d429f40f41120cf06d, type: 3}
+  m_Script: {fileID: 11500000, guid: f109369a041a92b4daa45df52aba9ac1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isActive: 0
 --- !u!4 &1548961033 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8541963321258438355, guid: 0366f781bef857945812305ac2fad46a, type: 3}
@@ -7812,7 +7823,7 @@ Transform:
   - {fileID: 703434691}
   - {fileID: 1872015324}
   m_Father: {fileID: 0}
-  m_RootOrder: 25
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1625172765
 GameObject:
@@ -18030,7 +18041,7 @@ Transform:
   - {fileID: 1058857598}
   - {fileID: 1681167487}
   m_Father: {fileID: 0}
-  m_RootOrder: 24
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2106617526
 GameObject:
@@ -18701,9 +18712,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 2138724391}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e44cd0454be905a4e9bcec4e6c0975d0, type: 3}
+  m_Script: {fileID: 11500000, guid: efb1cfd16cdc64540b1b5d6a1b93dd65, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelFailButton: {fileID: 350129013}
+  levelGameOver: {fileID: 937690119}
 --- !u!1001 &3633357404195738404
 PrefabInstance:
   m_ObjectHideFlags: 0
