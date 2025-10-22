@@ -23,6 +23,7 @@ public class RedDoorScript : MonoBehaviour
         if (other.gameObject.CompareTag("RedKey") && keyPickedUp)
         {
             locked = false;
+            transform.rotation = Quaternion.Euler(transform.rotation.x, transform.rotation.y, 90);
         }
     }
 

@@ -23,6 +23,7 @@ public class YellowDoorScript : MonoBehaviour
         if (other.gameObject.CompareTag("YellowKey") && keyPickedUp)
         {
             locked = false;
+            transform.rotation = Quaternion.Euler(transform.rotation.x, transform.rotation.y, 90);
         }
     }
 
