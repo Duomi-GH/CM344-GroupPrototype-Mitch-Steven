@@ -36,6 +36,12 @@ public class YellowKeyManager : MonoBehaviour
             yellowHave = true;
             YellowDoor.GetComponent<YellowDoorScript>().keyPickedUp = true;
             yellowCheck = true;
+            // Gets all YellowHazardScripts out there and makes it possible to kill yellow orbs.
+            YellowHazardScript[] allHazards = FindObjectsOfType<YellowHazardScript>();
+            foreach (YellowHazardScript hazard in allHazards)
+            {
+            hazard.keyPickedUp = true;
+            }
         }
     }
 }

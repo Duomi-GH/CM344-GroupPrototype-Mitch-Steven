@@ -36,6 +36,12 @@ public class RedKeyManager : MonoBehaviour
             redHave = true;
             RedDoor.GetComponent<RedDoorScript>().keyPickedUp = true;
             redCheck = true;
+            // Gets all RedHazardScripts out there and makes it possible to kill red orbs.
+            RedHazardScript[] allHazards = FindObjectsOfType<RedHazardScript>();
+            foreach (RedHazardScript hazard in allHazards)
+            {
+            hazard.keyPickedUp = true;
+            }
         }
     }
 }

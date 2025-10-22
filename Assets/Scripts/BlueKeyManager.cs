@@ -26,6 +26,7 @@ public class BlueKeyManager : MonoBehaviour
             Vector3 offset = new Vector3(0, 1, 0);
             transform.position = Vector2.SmoothDamp(transform.position, player.transform.position + offset, ref vel, smoothTime);
         }
+        print(BlueDoor.GetComponent<BlueDoorScript>().keyPickedUp);
     }
 
     //Manage collision with key and check boolean
@@ -35,6 +36,12 @@ public class BlueKeyManager : MonoBehaviour
         {
             blueHave = true;
             BlueDoor.GetComponent<BlueDoorScript>().keyPickedUp = true;
+            // Gets all BlueHazardScripts out there and makes it possible to kill blue orbs.
+            BlueHazardScript[] allHazards = FindObjectsOfType<BlueHazardScript>();
+            foreach (BlueHazardScript hazard in allHazards)
+            {
+            hazard.keyPickedUp = true;
+            }
         }
     }
 }
