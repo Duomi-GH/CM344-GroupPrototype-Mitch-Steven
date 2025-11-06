@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 8541963321258438351}
   - component: {fileID: 8541963321258438350}
   - component: {fileID: 8541963321258438348}
-  - component: {fileID: 666056068449554060}
+  - component: {fileID: 4525479086816738563}
   m_Layer: 6
-  m_Name: Enemy (Blue) 1
+  m_Name: Enemy (Neutral)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -128,7 +128,7 @@ MonoBehaviour:
   moveSpeed: 2
   pointA: {fileID: 0}
   pointB: {fileID: 0}
---- !u!114 &666056068449554060
+--- !u!114 &4525479086816738563
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -137,7 +137,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 8541963321258438354}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35db02d142c23b54bacd8caa80f4b6b2, type: 3}
+  m_Script: {fileID: 11500000, guid: 7fc556c2e028cd34e9cc58b99c200e39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  keyPickedUp: 0
