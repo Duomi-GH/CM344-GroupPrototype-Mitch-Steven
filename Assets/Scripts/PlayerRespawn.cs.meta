@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Scripts/MainMenuLevelSelect.cs.meta
+guid: 25c8fb1628264be4f80962b23a51f98b
+========
+guid: e25b7881aec70c34886ab5e26dfc2da5
+>>>>>>>> 25d4dddf5e9c71d45ecc2683a1b743c7c99f2a9e:Assets/Scripts/PlayerRespawn.cs.meta
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

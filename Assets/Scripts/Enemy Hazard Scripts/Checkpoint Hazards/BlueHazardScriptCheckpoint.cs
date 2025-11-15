@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RedHazardScript : MonoBehaviour
+public class BlueHazardScriptCheckpoint : MonoBehaviour
 {
     public bool keyPickedUp;
 
@@ -10,11 +10,11 @@ public class RedHazardScript : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-    
         if (other.CompareTag("Player"))
         {
             Debug.Log("Player hit a hazard!");
-            PlayerFail player = other.GetComponent<PlayerFail>();
+           // PlayerFail player = other.GetComponent<PlayerFail>();
+            PlayerRespawn player = other.GetComponent<PlayerRespawn>();
             
             // Allows color kills
             if (keyPickedUp)
@@ -25,9 +25,11 @@ public class RedHazardScript : MonoBehaviour
 
             else if (player != null)
             {
-                player.Fail();
+                //player.Fail();
+                player.Respawn();
             }
             
         }
+        
     }
 }
