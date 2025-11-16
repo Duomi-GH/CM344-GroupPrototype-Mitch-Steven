@@ -133,7 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2751901}
   m_Layer: 6
-  m_Name: Enemy(Hall) (7)
+  m_Name: Enemy(Hall) (Red 2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -154,8 +154,8 @@ Transform:
   - {fileID: 948167097}
   - {fileID: 2106617527}
   - {fileID: 1743031923}
-  m_Father: {fileID: 766710828}
-  m_RootOrder: 13
+  m_Father: {fileID: 1103068230}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4847824
 GameObject:
@@ -523,6 +523,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &84381256 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3633357404875043484, guid: 0f32c4c4cc3ef2646af7b0aa7ff4c065, type: 3}
+  m_PrefabInstance: {fileID: 3633357404195738404}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &92117769
 GameObject:
   m_ObjectHideFlags: 0
@@ -552,7 +557,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 766710828}
-  m_RootOrder: 14
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &112767500
 GameObject:
@@ -1228,6 +1233,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &199339385 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8541963321258438354, guid: 0366f781bef857945812305ac2fad46a, type: 3}
+  m_PrefabInstance: {fileID: 1272614089}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &206779467
 GameObject:
   m_ObjectHideFlags: 0
@@ -1322,7 +1332,7 @@ GameObject:
   m_Component:
   - component: {fileID: 223006010}
   m_Layer: 6
-  m_Name: Enemy(Hall) (2)
+  m_Name: Enemy(Hall) (Blue 1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1343,8 +1353,8 @@ Transform:
   - {fileID: 442147094}
   - {fileID: 112767501}
   - {fileID: 1082833576}
-  m_Father: {fileID: 766710828}
-  m_RootOrder: 9
+  m_Father: {fileID: 1103068230}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &225963294 stripped
 Transform:
@@ -2628,6 +2638,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &556318067 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3633357404875043484, guid: 0f32c4c4cc3ef2646af7b0aa7ff4c065, type: 3}
+  m_PrefabInstance: {fileID: 1673791784}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &593326248 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7405917124820395256, guid: 7a7dd677c702b534f8b49599831115df, type: 3}
@@ -3051,7 +3066,7 @@ GameObject:
   m_Component:
   - component: {fileID: 687862736}
   m_Layer: 6
-  m_Name: Enemy(Hall) (8)
+  m_Name: Enemy(Hall) (Blue 3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3072,8 +3087,8 @@ Transform:
   - {fileID: 1457420242}
   - {fileID: 2085402934}
   - {fileID: 1147601061}
-  m_Father: {fileID: 766710828}
-  m_RootOrder: 18
+  m_Father: {fileID: 1103068230}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &691839618
 GameObject:
@@ -3243,6 +3258,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &725841887 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9169075144546161769, guid: 66edb1282258f654e9d5baad1ac85999, type: 3}
+  m_PrefabInstance: {fileID: 1011948156}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &757245622
 GameObject:
   m_ObjectHideFlags: 0
@@ -3383,25 +3403,15 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1402070739}
-  - {fileID: 837409924}
+  - {fileID: 1103068230}
   - {fileID: 1044494164}
   - {fileID: 903694860}
   - {fileID: 595659668}
   - {fileID: 1648266998}
   - {fileID: 1877500406}
-  - {fileID: 1893933910}
-  - {fileID: 1022785594}
-  - {fileID: 223006010}
-  - {fileID: 2058204136}
-  - {fileID: 1403597173}
-  - {fileID: 2005483050}
-  - {fileID: 2751901}
   - {fileID: 92117770}
   - {fileID: 1627341355}
   - {fileID: 2036586787}
-  - {fileID: 1768261227}
-  - {fileID: 687862736}
-  - {fileID: 2098165938}
   - {fileID: 1621517741}
   - {fileID: 1474386220}
   m_Father: {fileID: 0}
@@ -3457,6 +3467,32 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8541963321258438355, guid: 0366f781bef857945812305ac2fad46a, type: 3}
   m_PrefabInstance: {fileID: 8541963320995834268}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &822403419 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8541963321258438354, guid: 0366f781bef857945812305ac2fad46a, type: 3}
+  m_PrefabInstance: {fileID: 1241319139}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &822403424
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 822403419}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1b3be0cf320f79742b3d9513a018dfed, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &837409923
 GameObject:
   m_ObjectHideFlags: 0
@@ -3467,7 +3503,7 @@ GameObject:
   m_Component:
   - component: {fileID: 837409924}
   m_Layer: 6
-  m_Name: Enemy(Hall)
+  m_Name: Enemy(Hall) (Blue)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3481,15 +3517,15 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 837409923}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 16.809595, y: 0.90450877, z: -0.24445322}
+  m_LocalPosition: {x: 16.809595, y: 0.9045086, z: -0.24445322}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 510983916}
   - {fileID: 115577034}
   - {fileID: 206779468}
-  m_Father: {fileID: 766710828}
-  m_RootOrder: 1
+  m_Father: {fileID: 1103068230}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &839813159
 PrefabInstance:
@@ -3979,6 +4015,27 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3633357404875043485, guid: 0f32c4c4cc3ef2646af7b0aa7ff4c065, type: 3}
   m_PrefabInstance: {fileID: 3633357404195738404}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &948167102
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 84381256}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a81e646d9c9974d41a167898d62bcb31, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &967472991
 GameObject:
   m_ObjectHideFlags: 0
@@ -4090,6 +4147,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &985045978 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8541963321258438354, guid: 0366f781bef857945812305ac2fad46a, type: 3}
+  m_PrefabInstance: {fileID: 1312644297}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &985045983
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 985045978}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1b3be0cf320f79742b3d9513a018dfed, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!4 &993093284 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8541963321258438355, guid: 0366f781bef857945812305ac2fad46a, type: 3}
@@ -4290,6 +4373,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1004430963 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9169075144546161769, guid: 66edb1282258f654e9d5baad1ac85999, type: 3}
+  m_PrefabInstance: {fileID: 539342180}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1004430968
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1004430963}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3ce093391e2df2e4cac2c048f051bf38, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1010550730
 GameObject:
   m_ObjectHideFlags: 0
@@ -4475,6 +4584,27 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 9169075144546161768, guid: 66edb1282258f654e9d5baad1ac85999, type: 3}
   m_PrefabInstance: {fileID: 1011948156}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &1011948162
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 725841887}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3ce093391e2df2e4cac2c048f051bf38, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!4 &1014539611 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1589292425881365684, guid: ca38951b761e7b1459340f93663f6553, type: 3}
@@ -4574,7 +4704,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1022785594}
   m_Layer: 6
-  m_Name: Enemy(Hall) (3)
+  m_Name: Enemy(Hall) (Yellow)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4595,8 +4725,8 @@ Transform:
   - {fileID: 457683740}
   - {fileID: 1784106364}
   - {fileID: 691839619}
-  m_Father: {fileID: 766710828}
-  m_RootOrder: 8
+  m_Father: {fileID: 1103068230}
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1044494163
 GameObject:
@@ -5030,6 +5160,47 @@ Transform:
   - {fileID: 1871072270}
   m_Father: {fileID: 0}
   m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1103068229
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1103068230}
+  m_Layer: 0
+  m_Name: Hall Enemy
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1103068230
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1103068229}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 837409924}
+  - {fileID: 223006010}
+  - {fileID: 2005483050}
+  - {fileID: 687862736}
+  - {fileID: 1893933910}
+  - {fileID: 2058204136}
+  - {fileID: 2751901}
+  - {fileID: 1022785594}
+  - {fileID: 1403597173}
+  - {fileID: 1768261227}
+  m_Father: {fileID: 766710828}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1132354776
 GameObject:
@@ -5579,7 +5750,7 @@ Animator:
   m_GameObject: {fileID: 1235748669}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: c34a74b9a1e95ad4ba291b58159326c9, type: 2}
+  m_Controller: {fileID: 9100000, guid: 1b3be0cf320f79742b3d9513a018dfed, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -5990,6 +6161,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1272404623 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8541963321258438354, guid: 0366f781bef857945812305ac2fad46a, type: 3}
+  m_PrefabInstance: {fileID: 1555744685}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1272404628
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1272404623}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1b3be0cf320f79742b3d9513a018dfed, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &1272614089
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6170,6 +6367,37 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1294107745 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9169075144546161769, guid: 66edb1282258f654e9d5baad1ac85999, type: 3}
+  m_PrefabInstance: {fileID: 9169075146012234243}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1306242281 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9169075144546161769, guid: 66edb1282258f654e9d5baad1ac85999, type: 3}
+  m_PrefabInstance: {fileID: 457683739}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1306242286
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1306242281}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3ce093391e2df2e4cac2c048f051bf38, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1307474208
 GameObject:
   m_ObjectHideFlags: 0
@@ -6545,6 +6773,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1348114133 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9169075144546161769, guid: 66edb1282258f654e9d5baad1ac85999, type: 3}
+  m_PrefabInstance: {fileID: 2113152073}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1383821208
 GameObject:
   m_ObjectHideFlags: 0
@@ -6881,6 +7114,7 @@ Transform:
   m_Children:
   - {fileID: 811140943}
   - {fileID: 1235748670}
+  - {fileID: 2098165938}
   m_Father: {fileID: 766710828}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6894,7 +7128,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1403597173}
   m_Layer: 6
-  m_Name: Enemy(Hall) (4)
+  m_Name: Enemy(Hall) (Yellow 1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6915,8 +7149,8 @@ Transform:
   - {fileID: 1011948157}
   - {fileID: 1954183948}
   - {fileID: 182493885}
-  m_Father: {fileID: 766710828}
-  m_RootOrder: 11
+  m_Father: {fileID: 1103068230}
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1443560009
 GameObject:
@@ -7245,7 +7479,7 @@ Transform:
   - {fileID: 1096445883}
   - {fileID: 1241998287}
   m_Father: {fileID: 766710828}
-  m_RootOrder: 21
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &1474386221
 Animator:
@@ -7401,6 +7635,27 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8541963321258438355, guid: 0366f781bef857945812305ac2fad46a, type: 3}
   m_PrefabInstance: {fileID: 1272614089}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &1548961038
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 199339385}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1b3be0cf320f79742b3d9513a018dfed, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &1555744685
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7539,7 +7794,7 @@ Transform:
   - {fileID: 703434691}
   - {fileID: 1872015324}
   m_Father: {fileID: 766710828}
-  m_RootOrder: 20
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1625172765
 GameObject:
@@ -7702,7 +7957,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 766710828}
-  m_RootOrder: 15
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1627341356
 SpriteRenderer:
@@ -8110,6 +8365,27 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3633357404875043485, guid: 0f32c4c4cc3ef2646af7b0aa7ff4c065, type: 3}
   m_PrefabInstance: {fileID: 1673791784}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &1673791790
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 556318067}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a81e646d9c9974d41a167898d62bcb31, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1681167486
 GameObject:
   m_ObjectHideFlags: 0
@@ -17798,6 +18074,27 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 9169075144546161768, guid: 66edb1282258f654e9d5baad1ac85999, type: 3}
   m_PrefabInstance: {fileID: 9169075146012234243}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &1768261232
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1294107745}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3ce093391e2df2e4cac2c048f051bf38, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1784106363
 GameObject:
   m_ObjectHideFlags: 0
@@ -42413,7 +42710,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1893933910}
   m_Layer: 6
-  m_Name: Enemy(Hall) (1)
+  m_Name: Enemy(Hall) (Red)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -42434,8 +42731,8 @@ Transform:
   - {fileID: 1913601896}
   - {fileID: 1827346696}
   - {fileID: 1015527290}
-  m_Father: {fileID: 766710828}
-  m_RootOrder: 7
+  m_Father: {fileID: 1103068230}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1913601895
 PrefabInstance:
@@ -42511,6 +42808,58 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3633357404875043485, guid: 0f32c4c4cc3ef2646af7b0aa7ff4c065, type: 3}
   m_PrefabInstance: {fileID: 1913601895}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1921667347 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8541963321258438354, guid: 0366f781bef857945812305ac2fad46a, type: 3}
+  m_PrefabInstance: {fileID: 449587333}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1921667352
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1921667347}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1b3be0cf320f79742b3d9513a018dfed, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!1 &1922826074 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3633357404875043484, guid: 0f32c4c4cc3ef2646af7b0aa7ff4c065, type: 3}
+  m_PrefabInstance: {fileID: 1074363383}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1922826079
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1922826074}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a81e646d9c9974d41a167898d62bcb31, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1954183947
 GameObject:
   m_ObjectHideFlags: 0
@@ -42610,7 +42959,7 @@ Animator:
   m_GameObject: {fileID: 1957404511}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 8d5ee95691a23604f8ff143606b8deb6, type: 2}
+  m_Controller: {fileID: 9100000, guid: a81e646d9c9974d41a167898d62bcb31, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -42937,7 +43286,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2005483050}
   m_Layer: 6
-  m_Name: Enemy(Hall) (5)
+  m_Name: Enemy(Hall) (Blue 2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -42958,8 +43307,8 @@ Transform:
   - {fileID: 1548961033}
   - {fileID: 1254528072}
   - {fileID: 886942133}
-  m_Father: {fileID: 766710828}
-  m_RootOrder: 12
+  m_Father: {fileID: 1103068230}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2036586786
 GameObject:
@@ -42991,7 +43340,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 766710828}
-  m_RootOrder: 16
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2036586788
 SpriteRenderer:
@@ -43045,6 +43394,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &2053217982 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8541963321258438354, guid: 0366f781bef857945812305ac2fad46a, type: 3}
+  m_PrefabInstance: {fileID: 839813159}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &2053217987
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2053217982}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1b3be0cf320f79742b3d9513a018dfed, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &2058204135
 GameObject:
   m_ObjectHideFlags: 0
@@ -43055,7 +43430,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2058204136}
   m_Layer: 6
-  m_Name: Enemy(Hall) (6)
+  m_Name: Enemy(Hall) (Red 1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -43076,8 +43451,8 @@ Transform:
   - {fileID: 1074363384}
   - {fileID: 1389532383}
   - {fileID: 1977031501}
-  m_Father: {fileID: 766710828}
-  m_RootOrder: 10
+  m_Father: {fileID: 1103068230}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2063498217
 GameObject:
@@ -43399,7 +43774,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2098165938}
   m_Layer: 0
-  m_Name: Enemy(Blue)
+  m_Name: Enemy(Blue) (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -43420,9 +43795,35 @@ Transform:
   - {fileID: 275809175}
   - {fileID: 1058857598}
   - {fileID: 1681167487}
-  m_Father: {fileID: 766710828}
-  m_RootOrder: 19
+  m_Father: {fileID: 1402070739}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2098648834 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3633357404875043484, guid: 0f32c4c4cc3ef2646af7b0aa7ff4c065, type: 3}
+  m_PrefabInstance: {fileID: 1913601895}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &2098648839
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2098648834}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a81e646d9c9974d41a167898d62bcb31, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &2106617526
 GameObject:
   m_ObjectHideFlags: 0
@@ -43581,6 +43982,27 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 9169075144546161768, guid: 66edb1282258f654e9d5baad1ac85999, type: 3}
   m_PrefabInstance: {fileID: 2113152073}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &2113152079
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1348114133}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3ce093391e2df2e4cac2c048f051bf38, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &2118016771 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8541963321258438354, guid: 0366f781bef857945812305ac2fad46a, type: 3}
@@ -44320,11 +44742,11 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 766710828}
+    m_TransformParent: {fileID: 1103068230}
     m_Modifications:
     - target: {fileID: 9169075144546161768, guid: 66edb1282258f654e9d5baad1ac85999, type: 3}
       propertyPath: m_RootOrder
-      value: 17
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 9169075144546161768, guid: 66edb1282258f654e9d5baad1ac85999, type: 3}
       propertyPath: m_LocalPosition.x
@@ -44368,7 +44790,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9169075144546161769, guid: 66edb1282258f654e9d5baad1ac85999, type: 3}
       propertyPath: m_Name
-      value: Enemy (Hall)
+      value: Enemy (Hall) (Yellow 2)
       objectReference: {fileID: 0}
     - target: {fileID: 9169075144546161775, guid: 66edb1282258f654e9d5baad1ac85999, type: 3}
       propertyPath: pointA
