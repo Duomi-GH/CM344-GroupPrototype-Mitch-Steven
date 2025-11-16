@@ -8409,6 +8409,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 878365429}
     m_Modifications:
+    - target: {fileID: 3633357404875043481, guid: 0f32c4c4cc3ef2646af7b0aa7ff4c065, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3633357404875043481, guid: 0f32c4c4cc3ef2646af7b0aa7ff4c065, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3633357404875043481, guid: 0f32c4c4cc3ef2646af7b0aa7ff4c065, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3633357404875043484, guid: 0f32c4c4cc3ef2646af7b0aa7ff4c065, type: 3}
       propertyPath: m_Name
       value: Enemy (Red) (1)
