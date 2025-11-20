@@ -13,10 +13,11 @@ MonoBehaviour:
   m_Name: 44
   m_EditorClassIdentifier: 
   m_AnimatedSprites:
+  - {fileID: 21300000, guid: f14ccb28d374ced499b28d81ca580976, type: 3}
   - {fileID: 21300000, guid: aac654a3a6c2c4845ac7d9199711a880, type: 3}
   - {fileID: 21300000, guid: f14ccb28d374ced499b28d81ca580976, type: 3}
-  m_MinSpeed: 1
-  m_MaxSpeed: 1
+  m_MinSpeed: 4
+  m_MaxSpeed: 4
   m_AnimationStartTime: 0
   m_AnimationStartFrame: 0
   m_TileColliderType: 0
