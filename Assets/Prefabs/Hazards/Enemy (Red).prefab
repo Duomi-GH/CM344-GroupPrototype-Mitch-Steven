@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: -6624614089980478360}
   m_Layer: 6
   m_Name: Enemy (Red)
-  m_TagString: Hazard
+  m_TagString: HazardRed
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
