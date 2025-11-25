@@ -24,112 +24,86 @@ public class GameSceneManager : MonoBehaviour
     private bool isLoading = false;
 
     // Level numbering is 1 based: 1 to totalLevels
+    public int CurrentLevel => currentLevelNumber;
     private int currentLevelNumber = 1;
 
     private void Awake()
     {
-        // Per scene singleton
         Instance = this;
     }
 
     private void Start()
     {
-        // Ensure Level 1 is always unlocked
+        // Ensure Level 1 is unlocked
         if (!PlayerPrefs.HasKey("UnlockedLevel_1"))
         {
             PlayerPrefs.SetInt("UnlockedLevel_1", 1);
             PlayerPrefs.Save();
         }
 
-        // Make sure Level Select panel starts hidden if assigned
+        // Hide Level Select initially
         if (levelSelectPanel != null)
-        {
             levelSelectPanel.SetActive(false);
-        }
     }
 
-    // -----------------------------
-    // Public API for Main Menu UI
-    // -----------------------------
+    // -------------------------------------------------
+    // Menu Buttons
+    // -------------------------------------------------
 
-    // "Play" button on Main Menu
     public void StartNewGame()
     {
         currentLevelNumber = 1;
         LoadLevelByNumber(1);
     }
 
-    // Back to Main Menu button
     public void LoadMainMenu()
     {
-        // If you ever pause with Time.timeScale = 0 in levels,
-        // you can safely reset it here.
-        Time.timeScale = 1f;
+        Time.timeScale = 1f; // unpause
         LoadScene(mainMenuSceneName);
     }
 
-    // Top right "return to main menu" in any level
     public void ReturnToMainMenuFromLevel()
     {
         LoadMainMenu();
     }
 
-    // Level Select button in Main Menu
     public void OpenLevelSelectPanel()
     {
         if (levelSelectPanel != null)
-        {
             levelSelectPanel.SetActive(true);
-        }
-        else
-        {
-            Debug.LogWarning("Level Select panel is not assigned on GameSceneManager.");
-        }
     }
 
-    // Optional: Back/Close button on Level Select panel
     public void CloseLevelSelectPanel()
     {
         if (levelSelectPanel != null)
-        {
             levelSelectPanel.SetActive(false);
-        }
     }
 
-    // -----------------------------
-    // Level Select API
-    // -----------------------------
+    // -------------------------------------------------
+    // Level Select
+    // -------------------------------------------------
 
-    // Called by Level Select buttons (Level 1 to Level 6)
     public void TryLoadLevelFromSelect(int levelNumber)
     {
         if (!IsValidLevel(levelNumber))
         {
-            Debug.LogWarning($"Requested level {levelNumber} is outside valid range 1 to {totalLevels}.");
+            Debug.LogWarning($"Requested level {levelNumber} is invalid.");
             return;
         }
 
         if (!IsLevelUnlocked(levelNumber))
         {
-            Debug.Log($"Level {levelNumber} is locked. Ignoring load request from Level Select.");
+            Debug.Log($"Level {levelNumber} is locked.");
             return;
         }
 
         LoadLevelByNumber(levelNumber);
     }
 
-    // -----------------------------
-    // Level Complete Handling
-    // -----------------------------
+    // -------------------------------------------------
+    // Level Complete Logic
+    // -------------------------------------------------
 
-    /// <summary>
-    /// Called by your level complete trigger when the player wins.
-    /// Parameters:
-    ///  - currentLevelNumber: the level the player just finished
-    ///  - nextLevelNumber: the level to load when the player hits Continue
-    ///  - winPanel: panel to enable
-    ///  - continueButton: button that will load the next level or main menu
-    /// </summary>
     public void HandleLevelComplete(
         int currentLevelNumber,
         int nextLevelNumber,
@@ -138,46 +112,49 @@ public class GameSceneManager : MonoBehaviour
     {
         this.currentLevelNumber = currentLevelNumber;
 
-        // Unlock the next level if it is valid
+        // Unlock next level
         if (IsValidLevel(nextLevelNumber))
-        {
             UnlockLevel(nextLevelNumber);
-        }
 
-        // Show the win panel
+        // Show win panel
         if (winPanel != null)
-        {
             winPanel.SetActive(true);
-        }
 
-        // Wire up the continue button
+        // Set up Continue button
         if (continueButton != null)
         {
             continueButton.onClick.RemoveAllListeners();
 
-            if (IsValidLevel(nextLevelNumber) && !string.IsNullOrEmpty(GetSceneNameForLevel(nextLevelNumber)))
+            if (IsValidLevel(nextLevelNumber) &&
+                !string.IsNullOrEmpty(GetSceneNameForLevel(nextLevelNumber)))
             {
-                continueButton.onClick.AddListener(() => LoadLevelByNumber(nextLevelNumber));
+                continueButton.onClick.AddListener(() =>
+                {
+                    Time.timeScale = 1f;    // UNPAUSE
+                    LoadLevelByNumber(nextLevelNumber);
+                });
             }
             else
             {
-                // If next level is invalid or not configured, fall back to main menu
-                continueButton.onClick.AddListener(LoadMainMenu);
+                continueButton.onClick.AddListener(() =>
+                {
+                    Time.timeScale = 1f;    // UNPAUSE
+                    LoadMainMenu();
+                });
             }
         }
     }
 
-    // -----------------------------
-    // Progression and PlayerPrefs
-    // -----------------------------
+    // -------------------------------------------------
+    // Progression / PlayerPrefs
+    // -------------------------------------------------
 
     public bool IsLevelUnlocked(int levelNumber)
     {
         if (!IsValidLevel(levelNumber))
             return false;
 
-        string key = $"UnlockedLevel_{levelNumber}";
-        return PlayerPrefs.GetInt(key, 0) == 1;
+        return PlayerPrefs.GetInt($"UnlockedLevel_{levelNumber}", 0) == 1;
     }
 
     public void UnlockLevel(int levelNumber)
@@ -185,8 +162,7 @@ public class GameSceneManager : MonoBehaviour
         if (!IsValidLevel(levelNumber))
             return;
 
-        string key = $"UnlockedLevel_{levelNumber}";
-        PlayerPrefs.SetInt(key, 1);
+        PlayerPrefs.SetInt($"UnlockedLevel_{levelNumber}", 1);
         PlayerPrefs.Save();
     }
 
@@ -195,22 +171,22 @@ public class GameSceneManager : MonoBehaviour
         return levelNumber >= 1 && levelNumber <= totalLevels;
     }
 
-    // -----------------------------
-    // Core scene loading
-    // -----------------------------
+    // -------------------------------------------------
+    // Scene Loading (FIXED for unpause)
+    // -------------------------------------------------
 
     private void LoadLevelByNumber(int levelNumber)
     {
         if (!IsValidLevel(levelNumber))
         {
-            Debug.LogError($"LoadLevelByNumber called with invalid level {levelNumber}");
+            Debug.LogError($"Level {levelNumber} is invalid.");
             return;
         }
 
         string sceneName = GetSceneNameForLevel(levelNumber);
         if (string.IsNullOrEmpty(sceneName))
         {
-            Debug.LogError($"No scene name configured for level {levelNumber}. Check levelSceneNames array.");
+            Debug.LogError($"Missing scene name for level {levelNumber}.");
             return;
         }
 
@@ -230,35 +206,35 @@ public class GameSceneManager : MonoBehaviour
 
     private void LoadScene(string sceneName)
     {
+        // *** FIX: UNPAUSE ANY TIME WE LOAD A SCENE ***
+        Time.timeScale = 1f;
+
         if (!isLoading)
-        {
             StartCoroutine(LoadSceneAsyncRoutine(sceneName));
-        }
     }
 
     private IEnumerator LoadSceneAsyncRoutine(string sceneName)
     {
         isLoading = true;
-        Debug.Log($"Loading scene: {sceneName}");
+
+        Debug.Log("Loading scene: " + sceneName);
 
         AsyncOperation operation = SceneManager.LoadSceneAsync(sceneName);
 
         while (!operation.isDone)
-        {
             yield return null;
-        }
 
         isLoading = false;
     }
 
-    // -----------------------------
+    // -------------------------------------------------
     // Utility
-    // -----------------------------
+    // -------------------------------------------------
 
     public void ReloadCurrentScene()
     {
-        string currentSceneName = SceneManager.GetActiveScene().name;
-        LoadScene(currentSceneName);
+        Time.timeScale = 1f;
+        LoadScene(SceneManager.GetActiveScene().name);
     }
 
     public void QuitApplication()
@@ -271,35 +247,29 @@ public class GameSceneManager : MonoBehaviour
 #endif
     }
 
-    // -----------------------------
-    // Backward compatibility
-    // -----------------------------
-    // These methods keep older scripts working
-    // without having to rewrite MainMenuUI or MainMenuLevelSelect.
+    // -------------------------------------------------
+    // Backwards compatibility
+    // -------------------------------------------------
 
-    // Old name used by MainMenuUI
     public void LoadGame()
     {
         StartNewGame();
     }
 
-    // Old progression setter used by MainMenuLevelSelect
     public void SetCurrentLevel(int levelNumber)
     {
         if (IsValidLevel(levelNumber))
             currentLevelNumber = levelNumber;
     }
 
-    // Old direct scene loader, sometimes called after SetCurrentLevel
     public void LoadSpecificLevel(string sceneName)
     {
-        // Try to infer level number from scene name like "Level_1" or "Level_01"
-        if (TryGetLevelNumberFromSceneName(sceneName, out int levelNumber) && IsValidLevel(levelNumber))
+        if (TryGetLevelNumberFromSceneName(sceneName, out int levelNumber)
+            && IsValidLevel(levelNumber))
         {
             currentLevelNumber = levelNumber;
         }
 
-        // Use the core loader so async logic and isLoading flag are respected
         LoadScene(sceneName);
     }
 
@@ -314,14 +284,8 @@ public class GameSceneManager : MonoBehaviour
         if (underscoreIndex < 0 || underscoreIndex == sceneName.Length - 1)
             return false;
 
-        string numberPart = sceneName.Substring(underscoreIndex + 1);   // "1" or "01"
+        string numberPart = sceneName.Substring(underscoreIndex + 1);
 
-        if (int.TryParse(numberPart, out int parsed))
-        {
-            levelNumber = parsed;
-            return true;
-        }
-
-        return false;
+        return int.TryParse(numberPart, out levelNumber);
     }
 }
