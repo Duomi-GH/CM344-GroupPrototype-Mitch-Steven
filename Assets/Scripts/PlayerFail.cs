@@ -4,17 +4,65 @@ public class PlayerFail : MonoBehaviour
 {
     public GameObject failPanel;
 
+    // references to the key managers
+    public BlueKeyManager blueKey;
+    public RedKeyManager redKey;
+    public YellowKeyManager yellowKey;
+
     private bool triggered = false;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        // If we already failed, ignore further collisions
         if (triggered) return;
 
-        // Check if the object has the Hazard tag
-        if (other.CompareTag("Hazard"))
+        string tag = other.tag;
+
+        // --- BLACK HAZARD (always kills) ---
+        if (tag == "Hazard")
         {
             Fail();
+            return;
+        }
+
+        // --- BLUE HAZARD ---
+        if (tag == "HazardBlue")
+        {
+            if (blueKey != null && blueKey.blueHave)
+            {
+                Destroy(other.gameObject);  // player destroys hazard
+            }
+            else
+            {
+                Fail(); // no key = fail
+            }
+            return;
+        }
+
+        // --- RED HAZARD ---
+        if (tag == "HazardRed")
+        {
+            if (redKey != null && redKey.redHave)
+            {
+                Destroy(other.gameObject);
+            }
+            else
+            {
+                Fail();
+            }
+            return;
+        }
+
+        // --- YELLOW HAZARD ---
+        if (tag == "HazardYellow")
+        {
+            if (yellowKey != null && yellowKey.yellowHave)
+            {
+                Destroy(other.gameObject);
+            }
+            else
+            {
+                Fail();
+            }
         }
     }
 
@@ -23,20 +71,17 @@ public class PlayerFail : MonoBehaviour
         if (triggered) return;
         triggered = true;
 
-        // Pause the game
         Time.timeScale = 0f;
 
-        // Show the fail UI
         if (failPanel != null)
             failPanel.SetActive(true);
 
-        Debug.Log("Player failed (hit a hazard).");
+        Debug.Log("PLAYER FAILED.");
     }
 
-    // Connected to your retry button
     public void RestartLevel()
     {
-        Time.timeScale = 1f; // Unpause the game
+        Time.timeScale = 1f;
         GameSceneManager.Instance.ReloadCurrentScene();
     }
 }

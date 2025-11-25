@@ -8,6 +8,9 @@ TagManager:
   - YellowKey
   - BlueKey
   - Hazard
+  - HazardBlue
+  - HazardRed
+  - HazardYellow
   layers:
   - Default
   - TransparentFX
